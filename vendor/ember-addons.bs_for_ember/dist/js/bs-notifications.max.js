@@ -28,7 +28,7 @@ Currently a single notification is displayed as an Alert on top of the screen, e
 
     itemViewClass: Ember.View.extend({
       classNames: ['alert', 'notification'],
-      template: Ember.Handlebars.compile('{{view.content.message}}'),
+      templateName: 'views/notification-item-view',
       classNameBindings: ["alertType"],
       isVisible: false,
       alertType: (function() {
